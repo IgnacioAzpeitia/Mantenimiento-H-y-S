@@ -1,0 +1,70 @@
+body{
+    background-image: url('https://images.pexels.com/photos/7504611/pexels-photo-7504611.jpeg?auto=compress&cs=tinysrgb&dpr=2&');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  color: #000;
+  margin: 0 auto;
+
+}
+.header{
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding-top: 4em;
+  
+  position: fixed;
+  left:0;
+  top:0;
+  right:0;
+  
+}
+.header a{
+color: white;
+text-decoration: none;
+align-items: center;
+}
+.logo-nav-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.logo{
+ letter-spacing: 10px;
+ font-size: 1.3em;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menuSuperior ul{
+    margin:1em;
+    padding:1;
+    list-style: none;
+}
+.menusuperior ul ul a{
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+.menuSuperior ul li a{
+    display:block;
+    padding:0.5rem 1rem;
+    transition:all 0.4s linear;
+    border-radius:5px;
+}
+.menuSuperior ul li {
+ display: inline-block;
+}
+.menuSuperior ul li a:hover{
+    background: #3333ff;
+}
+
