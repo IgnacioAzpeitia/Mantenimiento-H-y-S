@@ -1,11 +1,17 @@
 <%-- 
     Document   : index
-    Created on : 25/09/2021, 08:34:13 PM
+    Created on : 30/09/2021, 02:52:24 PM
     Author     : Ignacio
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
         <title>Inicio</title>

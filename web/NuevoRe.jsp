@@ -10,7 +10,7 @@
    <body>
         <h2>NUEVO REGISTRO</h2> 
                      <br />         <br /> 
-                     <form action="Inventario" method="POST" autocomplete="off">
+                     <form action="NuevoBien" method="POST" autocomplete="off">
                          
                     <p> 
                            Numero de Control:
@@ -18,23 +18,33 @@
                       </p>  
                       
                       <p> 
-                           Descripcion del bien:
-                           <input id="Descripcion_Bienes" name="Numero del Dispositivo" type="text"/>
+                           Nombre:
+                           <input id="Nombre_Bienes" name="Nombre_Bienes" type="text"/>
+                      </p>
+                      
+                      <p> 
+                           Descripcion del Bien:
+                           <input id="Descripcion_Bienes" name="Descripcion_Bienes" type="text"/>
+                      </p>
+
+                      <p> 
+                           Modelo:
+                           <input id="Modelo_Bienes" name="Modelo_Bienes" type="text"/>
+                      </p>
+                      
+                      <p> 
+                           Numero de Serie:
+                           <input id="Num_Serie_Bienes" name="Num_Serie_Bienes" type="text"/>
                       </p>
                       
                       <p> 
                            Cantidad:
                            <input id="Cantidad_Bienes" name="Cantidad_Bienes" type="text"/>
                       </p>
-
-                      <p> 
-                           Modelo y Numero de Serie:
-                           <input id="Modelo__Serie_Bienes" name="Modelo__Serie_Bienes" type="text"/>
-                      </p>
                       
                       <p> 
-                           Numero Aula o laboratorio:
-                           <input id="TipoAL_Escuela" name="TipoAL_Escuela" type="text"/>
+                           Num Aula/Laboratorio:
+                           <input id="Escuela_Id_Escuela" name="Escuela_Id_Escuela" type="text"/>
                       </p>
                       
                       <p> 
@@ -44,18 +54,15 @@
                       
                       <p> 
                            Estado:
-                           <input id="Estado_Bienes" name="Tipo de Bien" type="text"/>
-                      </p>
-                      
-                      <p> 
-                           Bienes no localizados Fisicamente:
-                           <input id="Bienes_No_Localizados_Bienes" name="Bienes_No_Localizados_Bienes" type="text"/>
+                           <input id="Estado_Bienes" name="Estado_Bienes" type="text"/>
                       </p>
                       
                       <p> 
                            Observaciones:
                            <input id="Observaciones_Bienes" name="Observaciones_Bienes" type="text"/>
                       </p>
+                      
+                      
                       
                       
                       <button id="Guardar" name="Guardar" type="submit">Guardar</button>

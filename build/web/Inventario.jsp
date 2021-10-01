@@ -4,7 +4,7 @@
     Author     : Ignacio
 --%>
 <%@page import="Conexion.Inventario"%>
-<%@page import="Modelo.bienes"%>
+<%@page import="Modelo.Bienes"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -43,34 +43,34 @@
                 <tr>
                    
                     <th>Num Control</th>
-                    <th>Descripcion del Bien</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Modelo</th>
+                    <th>Num Serie</th>
                     <th>Cantidad</th>
-                    <th>Modelo y Num serie</th>
-                    <th>Numero de inventario</th>
-                    <th>Num aula laboratorio</th>
+                    <th>Ubicado</th>
                     <th>Fecha de Ingreso</th>
                     <th>Estado</th>
-                    <th>Biennes no lo calizados fisicamente</th>
                     <th>Observaciones</th>
                     
                 </tr>
                   </thead>
               <tbody>
                 <%
-                List<bienes> lista = Inventario.consultarbienes();
-                for(bienes a : lista){
+                List<Bienes> lista = Inventario.consultarbienes();
+                for(Bienes a : lista){
                 %>
                 
                     <tr>
                     <td><%=a.getNumero_Control_Bienes()%></td>
+                    <td><%=a.getNombre_Bienes()%></td>
                     <td><%=a.getDescripcion_Bienes()%></td>
+                    <td><%=a.getModelo_Bienes()%></td>
+                    <td><%=a.getNum_Serie_Bienes()%></td>
                     <td><%=a.getCantidad_Bienes()%></td>
-                    <td><%=a.getModelo__Serie_Bienes()%></td>
-                    <td><%=a.getNumero_Inventario_Bienes()%></td>
-                    <td><%=a.getTipoAL_Escuela()%></td>
+                    <td><%=a.getTipo_Escuela()%></td>
                     <td><%=a.getFecha_Ingreso_Bienes()%></td>
                     <td><%=a.getEstado_Bienes()%></td>
-                    <td><%=a.getBienes_No_Localizados_Bienes()%></td>
                     <td><%=a.getObservaciones_Bienes()%></td>
                     
                 </tr>
