@@ -37,17 +37,17 @@
         
             <thead> 
                 <tr>
-                    <th>Boleta/Num Empleado<th/>
-                    <th>Nombre Completo<th/>
-                    <th>Descripcion<th/>
-                    <th>Modelo y Num Serie<th/>
-                    <th>Num Inventario<th/>
-                    <th>Aula/laboratorio<th/>
-                    <th>Fecha de Prestamo/Entrada<th/>
-                    <th>Fecha de Prestamo/Salida<th/>
-                    <th>Estado<th/>
-                    <th>Bienes no localizados fisicamente<th/>
-                    <th>Observaciones<th/>
+                    <th>Boleta/Num Empleado</th>
+                    <th>Nombre Completo</th>
+                    <th>Descripcion</th>
+                    <th>Modelo y Num Serie</th>
+                    <th>Num Inventario</th>
+                    <th>Aula/laboratorio</th>
+                    <th>Fecha de Prestamo/Entrada</th>
+                    <th>Fecha de Prestamo/Salida</th>
+                    <th>Estado</th>
+                    <th>Bienes no localizados fisicamente</th>
+                    <th>Observaciones</th>
                     
                 </tr>
                   </thead>

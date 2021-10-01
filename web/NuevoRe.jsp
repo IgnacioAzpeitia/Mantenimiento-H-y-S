@@ -6,13 +6,18 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<link href="css/ESTIREG.css" rel="stylesheet" type="text/css">
+
 <html>
    <body>
-        <h2>NUEVO REGISTRO</h2> 
-                     <br />         <br /> 
+        <h2></h2> 
+                     
+                     <div id="cuadro">
                      <form action="NuevoBien" method="POST" autocomplete="off">
-                         
-                    <p> 
+                      <p id="titulo">Nuevo Registro</p>    
+                    <hr>
+              
+                      <p> 
                            Numero de Control:
                            <input id="Numero_Control_Bienes" name="Numero_Control_Bienes" type="text"/>
                       </p>  
@@ -63,11 +68,20 @@
                       </p>
                       
                       
-                      
+        
                       
                       <button id="Guardar" name="Guardar" type="submit">Guardar</button>
                          
                      </form>
+              <h1>AVISO</h1>
+         <p>RECUERDE QUE PARA INGRESAR EL NUMERO DE AULA/LABORATORIO DEBE DE INGRESARLO DE LA SIGUIENTE FORMA:  
+                  <p>1001 REPRESENA A "LABORATORIO-01"</p>  
+                   <p>1002 REPRESENA A "LABORATORIO-02"</p>
+                   <p>1003 REPRESENA A "LABORATORIO-03"</p>
+                   <p>1004 REPRESENA A "LABORATORIO-04"</p>
+                   <p>1005 REPRESENA A "AULA-01"</p>
+                   <p>1006 REPRESENA A "AULA-02"</p>
+                   <p>1007 REPRESENA A "AULA-03"</p>
 
 
         
