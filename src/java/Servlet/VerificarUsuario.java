@@ -52,7 +52,11 @@ public class VerificarUsuario extends HttpServlet {
                 sesionparametro.setAttribute("Usuario_usuario", Usuario_usuario);
                 
                 if(u.getPrivilegio_usuario() == 1){
+<<<<<<< HEAD
                     response.sendRedirect("InicioPa.jsp");
+=======
+                    response.sendRedirect("InicioAdmin.jsp");
+>>>>>>> e1b2910 (Sitema)
                 }
 
                 

@@ -58,7 +58,11 @@
          <h1>Eror 404</h1>
          <p>Esta pagina no se encuentra disponible
          en estos momentos . Disculpa la molestia</p>
+<<<<<<< HEAD
          <a href="./InicioPa.jsp" class="boton">
+=======
+         <a href="./InicioAdmin.jsp" class="boton">
+>>>>>>> e1b2910 (Sitema)
              Pagina Principal
              </a>
         </div>

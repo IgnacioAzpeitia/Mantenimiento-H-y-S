@@ -14,7 +14,11 @@
     <body>
         <header class ="header">
             <div class ="container logo-nav-container">
+<<<<<<< HEAD
                 <a href="./InicioPa.jsp" class ="logo">Mantenimiento H y S</a>
+=======
+                <a href="./InicioAdmin.jsp" class ="logo">Mantenimiento H y S</a>
+>>>>>>> e1b2910 (Sitema)
                 <nav class ="menuSuperior">
                     <ul>
                        <li><a href="./Bajas.jsp">Historial de Bajas</a></li>
@@ -48,7 +52,11 @@
                     <th>Modelo</th>
                     <th>Num Serie</th>
                     <th>Cantidad</th>
+<<<<<<< HEAD
                     <th>Ubicado</th>
+=======
+                    <th>Aula/Laboratorio</th>
+>>>>>>> e1b2910 (Sitema)
                     <th>Fecha de Ingreso</th>
                     <th>Estado</th>
                     <th>Observaciones</th>
