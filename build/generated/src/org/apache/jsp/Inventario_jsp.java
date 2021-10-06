@@ -3,6 +3,9 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import Conexion.Inventario;
+import Modelo.Bienes;
+import java.util.List;
 
 public final class Inventario_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -44,6 +47,8 @@ public final class Inventario_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <title> Inventario </title>\n");
@@ -76,22 +81,69 @@ public final class Inventario_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \n");
       out.write("        \n");
       out.write("            <thead> \n");
+      out.write("                \n");
       out.write("                <tr>\n");
       out.write("                   \n");
-      out.write("                    <th>Num Control<th/>\n");
-      out.write("                    <th>Descripcion del Bien<th/>\n");
+      out.write("                    <th>Num Control</th>\n");
+      out.write("                    <th>Nombre</th>\n");
+      out.write("                    <th>Descripcion</th>\n");
+      out.write("                    <th>Modelo</th>\n");
+      out.write("                    <th>Num Serie</th>\n");
       out.write("                    <th>Cantidad</th>\n");
-      out.write("                    <th>Modelo y Num serie<th/>\n");
-      out.write("                    <th>Numero de inventario<th/>\n");
-      out.write("                    <th>Num aula laboratorio<th/>\n");
-      out.write("                    <th>Fecha de Ingreso<th/>\n");
-      out.write("                    <th>Estado<th/>\n");
-      out.write("                    <th>Biennes no lo calizados fisicamente<th/>\n");
-      out.write("                    <th>Observaciones<th/>\n");
+      out.write("                    <th>Ubicado</th>\n");
+      out.write("                    <th>Fecha de Ingreso</th>\n");
+      out.write("                    <th>Estado</th>\n");
+      out.write("                    <th>Observaciones</th>\n");
       out.write("                    \n");
       out.write("                </tr>\n");
       out.write("                  </thead>\n");
-      out.write("                  \n");
+      out.write("              <tbody>\n");
+      out.write("                ");
+
+                List<Bienes> lista = Inventario.consultarbienes();
+                for(Bienes a : lista){
+                
+      out.write("\n");
+      out.write("                \n");
+      out.write("                    <tr>\n");
+      out.write("                    <td>");
+      out.print(a.getNumero_Control_Bienes());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getNombre_Bienes());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getDescripcion_Bienes());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getModelo_Bienes());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getNum_Serie_Bienes());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getCantidad_Bienes());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getTipo_Escuela());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getFecha_Ingreso_Bienes());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getEstado_Bienes());
+      out.write("</td>\n");
+      out.write("                    <td>");
+      out.print(a.getObservaciones_Bienes());
+      out.write("</td>\n");
+      out.write("                    \n");
+      out.write("                </tr>\n");
+      out.write("                ");
+
+                }
+                
+      out.write("\n");
+      out.write("            </tbody>\n");
       out.write("        </table>\n");
       out.write("    </body> \n");
       out.write("\n");

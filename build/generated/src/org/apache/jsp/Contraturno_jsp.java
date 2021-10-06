@@ -81,8 +81,8 @@ public final class Contraturno_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <th>Descripcion<th/>\n");
       out.write("                    <th>Modelo y Num Serie<th/>\n");
       out.write("                    <th>Num Inventario<th/>\n");
-      out.write("                    <th>Num Aula/laboratorio<th/>\n");
-      out.write("                     <th>Fecha de Prestamo/Entrada<th/>\n");
+      out.write("                    <th>Aula/laboratorio<th/>\n");
+      out.write("                    <th>Fecha de Prestamo/Entrada<th/>\n");
       out.write("                    <th>Fecha de Prestamo/Salida<th/>\n");
       out.write("                    <th>Estado<th/>\n");
       out.write("                    <th>Bienes no localizados fisicamente<th/>\n");

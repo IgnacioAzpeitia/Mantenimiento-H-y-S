@@ -5,7 +5,7 @@
  */
 package Conexion;
 
-import Modelo.bienes;
+import Modelo.Bienes;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,30 +17,31 @@ import java.util.List;
  * @author Ignacio
  */
 public class Inventario {
-    public static List<bienes> consultarbienes(){
-        List<bienes> lista = new ArrayList<bienes>();
+    public static List<Bienes> consultarbienes(){
+        List<Bienes> lista = new ArrayList<Bienes>();
         
         try{
             Connection con = Conexion.getConnection();
-             String q = "select Numero_Control_Bienes, Descripcion_Bienes, Cantidad_Bienes, Modelo__Serie_Bienes,"
-                    + "Numero_Inventario_Bienes, TipoAL_Escuela, Fecha_Ingreso_Bienes, Estado_Bienes,"
-                    + "Bienes_No_Localizados_Bienes, Observaciones_Bienes FROM Bienes, Escuela"; 
+             String q = "select Numero_Control_Bienes, Nombre_Bienes, Descripcion_Bienes, Modelo_Bienes," 
+                +"Num_Serie_Bienes, Cantidad_Bienes, Tipo_Escuela, Fecha_Ingreso_Bienes," 
+                +"Estado_Bienes, Observaciones_Bienes FROM Bienes, Escuela "
+                +"where Bienes.Escuela_Id_Escuela = Escuela.Id_Escuela";
             
             PreparedStatement ac = con.prepareStatement(q);
             
             
             ResultSet rs = ac.executeQuery();
             while(rs.next()){
-                bienes a = new bienes();
+                Bienes a = new Bienes();
                 a.setNumero_Control_Bienes(rs.getString(1));
-                a.setDescripcion_Bienes(rs.getString(2));
-                a.setCantidad_Bienes(rs.getInt(3));
-                a.setModelo__Serie_Bienes(rs.getString(4));
-                a.setNumero_Inventario_Bienes(rs.getInt(5));
-                a.setTipoAL_Escuela(rs.getString(6));
-                a.setFecha_Ingreso_Bienes(rs.getString(7));
-                a.setEstado_Bienes(rs.getString(8));
-                a.setBienes_No_Localizados_Bienes(rs.getString(9));
+                a.setNombre_Bienes(rs.getString(2));
+                a.setDescripcion_Bienes(rs.getString(3));
+                a.setModelo_Bienes(rs.getString(4));
+                a.setNum_Serie_Bienes(rs.getString(5));
+                a.setCantidad_Bienes(rs.getString(6));
+                a.setTipo_Escuela(rs.getString(7));
+                a.setFecha_Ingreso_Bienes(rs.getString(8));
+                a.setEstado_Bienes(rs.getString(9));
                 a.setObservaciones_Bienes(rs.getString(10));
 
                 lista.add(a);

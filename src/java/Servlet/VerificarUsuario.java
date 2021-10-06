@@ -52,7 +52,7 @@ public class VerificarUsuario extends HttpServlet {
                 sesionparametro.setAttribute("Usuario_usuario", Usuario_usuario);
                 
                 if(u.getPrivilegio_usuario() == 1){
-                    response.sendRedirect("InicioPa.jsp");
+                    response.sendRedirect("InicioAdministrador.jsp");
                 }
 
                 

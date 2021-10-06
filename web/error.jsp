@@ -58,7 +58,7 @@
          <h1>Eror 404</h1>
          <p>Esta pagina no se encuentra disponible
          en estos momentos . Disculpa la molestia</p>
-         <a href="./InicioPa.jsp" class="boton">
+         <a href="./InicioAdministrador.jsp" class="boton">
              Pagina Principal
              </a>
         </div>

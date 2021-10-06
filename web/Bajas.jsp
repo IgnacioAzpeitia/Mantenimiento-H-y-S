@@ -17,7 +17,7 @@
     <body>
         <header class ="header">
             <div class ="container logo-nav-container">
-                <a href="./InicioPa.jsp" class ="logo">Mantenimiento H y S</a>
+                <a href="./InicioAdministrador.jsp" class ="logo">Mantenimiento H y S</a>
                 <nav class ="menuSuperior">
                     <ul>
                         <li><a href="./Bajas.jsp">Historial de Bajas</a></li>
